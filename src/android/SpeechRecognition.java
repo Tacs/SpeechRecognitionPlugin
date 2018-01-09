@@ -284,9 +284,7 @@ public class SpeechRecognition extends CordovaPlugin {
                 Log.d(LOG_TAG, "fire no match event");
                 fireEvent("nomatch");
             }
-            //listening = false;
-            tacsy++;
-            if (tacsy==3) listening = false;
+            listening = false;
         }
 
         @Override

@@ -42,6 +42,7 @@ public class SpeechRecognition extends CordovaPlugin {
 
     private static String [] permissions = { Manifest.permission.RECORD_AUDIO };
     private static int RECORD_AUDIO = 0;
+    private static int tacsy = 0;
 
     protected void getMicPermission()
     {
@@ -283,7 +284,9 @@ public class SpeechRecognition extends CordovaPlugin {
                 Log.d(LOG_TAG, "fire no match event");
                 fireEvent("nomatch");
             }
-            listening = false;
+            //listening = false;
+            tacsy++;
+            if (tacsy==3) listening = false;
         }
 
         @Override

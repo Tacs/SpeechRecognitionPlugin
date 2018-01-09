@@ -88,3 +88,13 @@ Portuguese (Portugal) (pt-PT)
 Two-character codes can be used too, but for English, "en" will use "en-US" 
  
  
+ 
+Forked on 2018-01-08
+====================
+There was an annoying bug on Android where the continuous recognition wasn't working.
+
+Update 2018-01-09
+=================
+To make it work continuously on Android, just ...
+
+
